@@ -6,12 +6,12 @@
 
     <context:annotation-config />
 
-<bean id="messageSendService" class="com.nhnacademy.edu.springframework.messagesender.service.MessageSendService" autowire="byName">
+<!--<bean id="messageSendService" class="com.nhnacademy.edu.springframework.messagesender.service.MessageSendService" autowire="byName">-->
 <!--    <property name="messageSender" ref="smsMessageSender"/>-->
 <!--    <constructor-arg ref="smsMessageSender"/>-->
-</bean>
-    <bean id="emailMessageSender" class="com.nhnacademy.edu.springframework.messagesender.message.EmailMessageSender" >
-    </bean>
+<!--</bean>-->
+<!--    <bean id="emailMessageSender" class="com.nhnacademy.edu.springframework.messagesender.message.EmailMessageSender" >-->
+<!--    </bean>-->
 
 <!--    <bean id="smsMessageSender" class="com.nhnacademy.edu.springframework.messagesender.message.SmsMessageSender" init-method="init" >-->
 <!--        <qualifier type="com.nhnacademy.edu.springframework.messagesender.annotation.SMS"/>-->

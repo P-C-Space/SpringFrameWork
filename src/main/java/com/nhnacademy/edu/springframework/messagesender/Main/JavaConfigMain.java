@@ -7,8 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class JavaConfigMain {
     public static void main(String[] args) {
 
-        try (AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
-                "com.nhnacademy.edu.springframework");) {
+        try (AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.nhnacademy.edu.springframework");) {
             User user = new User("nhn@gmail.com", "010-1234-5678");
 
             MessageSendService messageSendService = context.getBean("messageSendService", MessageSendService.class);
