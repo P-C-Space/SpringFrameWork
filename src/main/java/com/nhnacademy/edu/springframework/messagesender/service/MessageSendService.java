@@ -1,9 +1,9 @@
 package com.nhnacademy.edu.springframework.messagesender.service;
 
 import com.nhnacademy.edu.springframework.messagesender.User;
-import com.nhnacademy.edu.springframework.messagesender.annotation.SMS;
 import com.nhnacademy.edu.springframework.messagesender.message.MessageSender;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class MessageSendService{
     MessageSender messageSender;
@@ -11,7 +11,8 @@ public class MessageSendService{
     public MessageSendService(){}
 
     @Autowired
-    public MessageSendService(@SMS MessageSender messageSender){
+    public MessageSendService(
+            @Qualifier("smsMessageSender") MessageSender messageSender){
         this.messageSender = messageSender;
     }
 
