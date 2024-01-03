@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/.idea/sonarlint/securityhotspotstore/1/6/169a949bffafd00c4f742bd80b5a0a679a005bb7
+
+.idea
+.idea/sonarlint/*
