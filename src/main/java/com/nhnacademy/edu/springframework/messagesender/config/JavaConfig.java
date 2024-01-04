@@ -6,6 +6,7 @@ import com.nhnacademy.edu.springframework.messagesender.service.MessageSendServi
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 //@Configuration
 public class JavaConfig {

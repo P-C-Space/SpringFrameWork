@@ -6,9 +6,11 @@ import com.nhnacademy.edu.springframework.messagesender.message.SmsMessageSender
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-//@Configuration
-//@ComponentScan(basePackages = {"com.nhnacademy.edu.springframework"})
+@Configuration
+@ComponentScan(basePackages = {"com.nhnacademy.edu.springframework"})
+@EnableAspectJAutoProxy
 public class MainConfig {
 
 //    @Bean(value = "smsMessageSender")
