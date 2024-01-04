@@ -12,7 +12,7 @@ public class GreetingService {
         this.greeter = greeter;
     }
 
-    public void setGreeter(Greeter greeter) {
+    public void setEnglishGreeter(Greeter greeter) {
         System.out.println("setGreeter invoked!");
         this.greeter = greeter;
     }

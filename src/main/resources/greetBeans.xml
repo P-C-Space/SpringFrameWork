@@ -3,13 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="greetingService" class="com.nhnacademy.edu.springframework.greeting.service.GreetingService" autowire="byType">
+    <bean id="greetingService" class="com.nhnacademy.edu.springframework.greeting.service.GreetingService" autowire="byName">
 <!--        <constructor-arg ref="koreanGreeter"/>-->
 <!--        <property name="greeter" ref="englishGreeter"/>-->
     </bean>
 
-<!--    <bean id="englishGreeter" class="com.nhnacademy.edu.springframework.greeting.greeter.EnglishGreeter" scope="singleton" init-method="init" destroy-method="cleanup">-->
-<!--    </bean>-->
+    <bean id="englishGreeter" class="com.nhnacademy.edu.springframework.greeting.greeter.EnglishGreeter" scope="singleton" init-method="init" destroy-method="cleanup">
+    </bean>
 
     <bean id="koreanGreeter" class="com.nhnacademy.edu.springframework.greeting.greeter.KoreanGreeter" scope="prototype" init-method="init" destroy-method="cleanup">
     </bean>
